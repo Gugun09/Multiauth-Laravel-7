@@ -46,7 +46,7 @@
 
                         <div class="field is-horizontal">
                             <div class="field-label">
-                                <label class="label">Password</label>
+                                <label class="label">Password Admin</label>
                             </div>
 
                             <div class="field-body">
@@ -89,7 +89,7 @@
                                     </div>
 
                                     <div class="control">
-                                        <a href="{{ route('password.request') }}">
+                                        <a href="{{ route('admin.password.request') }}">
                                             Forgot Your Password?
                                         </a>
                                     </div>

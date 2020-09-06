@@ -17,7 +17,7 @@
         <div class="column is-5">
             <div class="card">
                 <header class="card-header">
-                    <p class="card-header-title">Reset Password</p>
+                    <p class="card-header-title">Reset Password Admin</p>
                 </header>
 
                 <div class="card-content">
@@ -27,7 +27,7 @@
                         </div>
                     @endif
 
-                    <form class="password-reset-form" method="POST" action="{{ route('password.request') }}">
+                    <form class="password-reset-form" method="POST" action="{{ route('admin.password.request') }}">
 
                         {{ csrf_field() }}
 
