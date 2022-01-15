@@ -25,7 +25,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('login', 'AuthAdmin\LoginController@showLoginForm')->name('admin.login');
     Route::post('login', 'AuthAdmin\LoginController@login')->name('admin.login.submit');
     Route::get('/', 'AdminController@index')->name('admin.home');
-    Route::get('/logout', 'AuthAdmin\loginController@logout')->name('admin.logout');
+    Route::get('/logout', 'AuthAdmin\LoginController@logout')->name('admin.logout');
     Route::get('/password/reset', 'AuthAdmin\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
     Route::post('/password/email', 'AuthAdmin\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
     Route::get('/password/reset/{token}','AuthAdmin\ResetPasswordController@showResetForm')->name('admin.password.reset');
